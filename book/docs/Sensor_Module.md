@@ -1,8 +1,8 @@
 # Sensor Module 
 
-![IoT_System](\img\IoT_Sensor_Module\IoT_Sensor_Module.PNG)The sensor module consists of a microcontroller (MCU), the [SparFun MicroMod nRF52840 Processer](https://www.sparkfun.com/products/16984) mounted on a [MicroMod](https://www.sparkfun.com/micromod) carrier board, and the [SCD30](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensors-scd30/) CO<sub>2</sub>-sensor from Sensirion. The SCD30 is a 'true' CO<sub>2</sub> sensor that will tell you the CO<sub>2</sub> ppm (parts-per-million) composition of ambient air. 
+![IoT_System](.\img\IoT_Sensor_Module\IoT_Sensor_Module.PNG)The sensor module consists of a microcontroller (MCU), the [SparFun MicroMod nRF52840 Processer](https://www.sparkfun.com/products/16984) mounted on a [MicroMod](https://www.sparkfun.com/micromod) carrier board, and the [SCD30](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensors-scd30/) CO<sub>2</sub>-sensor from Sensirion. The SCD30 is a 'true' CO<sub>2</sub> sensor that will tell you the CO<sub>2</sub> ppm (parts-per-million) composition of ambient air. 
 
-![IoT_System_Setup](\img\IoT_Sensor_Module\IoT_System_Setup.PNG)
+![IoT_System_Setup](.\img\IoT_Sensor_Module\IoT_System_Setup.PNG)
 
 
 
