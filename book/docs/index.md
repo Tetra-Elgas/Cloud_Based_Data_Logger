@@ -6,7 +6,7 @@
 
 
 
-![IoT_System](./img/IoT_System/IoT_System.PNG)The Cloud-based data logger consists of a microcontroller (MCU) and the [SCD30](https://www.adafruit.com/product/4867), a CO<sub>2</sub>, temperature and humidity sensor. The MCU is connected by USB-C to a laptop, a router establishes the Cloud connection. The free [AllThingsTalk Maker](https://www.allthingstalk.com/) IoT Platform is used for data collection and visualization.
+![IoT_System](./img/IoT_System/System.PNG)The Cloud-based data logger consists of a microcontroller (MCU) and the [SCD30](https://www.adafruit.com/product/4867), a CO<sub>2</sub>, temperature and humidity sensor. The MCU is connected by USB-C to a laptop, a router establishes the Cloud connection. The free [AllThingsTalk Maker](https://www.allthingstalk.com/) IoT Platform is used for data collection and visualization.
 
 <br>
 
