@@ -1,0 +1,28 @@
+site_name: Cloud-Based Data Logger Tutorial
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    primary: black
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+    - search
+
+edit_uri: ""
+
+nav:
+  - Home: 'index.md'
+  - Sensor Module: 'Sensor_Module.md'
+  - Cloud platform: 'Cloud_platform.md'
+  - Data Logger Software: 'Software.md'
+  - Retrieve data: 'Retrieve_data.md'
+  - Rules: 'Rules.md'
+  - License: 'license.md'
