@@ -2,7 +2,7 @@
 
 # Cloud platform
 
-![AllThingsTalkMaker](\img\Cloud\AllThingsTalkMaker_1.PNG)
+![AllThingsTalkMaker](.\img\Cloud\AllThingsTalkMaker_1.PNG)
 
 <br>
 
@@ -12,7 +12,7 @@ In this tutorial the [AllThingsTalk Maker](https://maker.allthingstalk.com/) Dev
 
  <br>
 
-![AllThingsTalkMaker_2](\img\Cloud\AllThingsTalkMaker_2.PNG)
+![AllThingsTalkMaker_2](.\img\Cloud\AllThingsTalkMaker_2.PNG)
 
 <br>
 
@@ -24,19 +24,19 @@ The ground groups all the relevant IoT resources together ([reference](https://d
 
 **Create Ground**
 
-![Create_ground](\img\Cloud\Create_ground.PNG)
+![Create_ground](.\img\Cloud\Create_ground.PNG)
 
-![Ground](\img\Cloud\Ground.PNG)
+![Ground](.\img\Cloud\Ground.PNG)
 
 <br>
 
 Next connect the device, by selecting: *Your own device*.
 
-![device_name](\img\Cloud\device_name.PNG)
+![device_name](.\img\Cloud\device_name.PNG)
 
 <br>
 
-![Data_Logger](\img\Cloud\Data_Logger.PNG)
+![Data_Logger](.\img\Cloud\Data_Logger.PNG)
 
 ## Assets
 
@@ -115,9 +115,9 @@ The device JSON file describes the device.
 
 The Ground ID and Ground token can be found on the ground settings page, the device on the device settings page.
 
-![settings](\img\Cloud\settings.PNG)
+![settings](.\img\Cloud\settings.PNG)
 
-![device authentication](\img\Cloud\device authentication.PNG)
+![device authentication](.\img\Cloud\device authentication.PNG)
 
 - [asset kind](https://docs.allthingstalk.com/cloud/concepts/assets/). There are 3 supported asset kings: sensor, actuator and virtual. The data logger measures environmental data, kind = sensor.
 - [profile](https://docs.allthingstalk.com/cloud/concepts/assets/profiles/). The profile field defines the data type. The data logger gives for the counter an integer and for the assets related to the SCD30 Sensor Module a decimal, also the unit is provided in the profile field.
@@ -189,7 +189,7 @@ import requests
 asset_list = create_assets("device.json")
 ```
 
-![Assets](\img\Cloud\Assets.PNG)
+![Assets](.\img\Cloud\Assets.PNG)
 
 <br>
 
@@ -201,15 +201,15 @@ asset_list = create_assets("device.json")
 
 **Create and arrange Pinboard**
 
-![Pinboard](\img\Cloud\Pinboard_1.PNG)
+![Pinboard](.\img\Cloud\Pinboard_1.PNG)
 
-![Pinboard_2](\img\Cloud\Pinboard_2.PNG)
+![Pinboard_2](.\img\Cloud\Pinboard_2.PNG)
 
-![Pinboard](\img\Cloud\Pinboard_3.PNG)
+![Pinboard](.\img\Cloud\Pinboard_3.PNG)
 
 <br>
 
-![Pinboard](\img\Cloud\Pinboard_4.PNG)
+![Pinboard](.\img\Cloud\Pinboard_4.PNG)
 
 ---
 

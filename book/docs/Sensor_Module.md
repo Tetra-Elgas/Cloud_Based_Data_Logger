@@ -116,7 +116,7 @@ void loop()
 
 The output on the serial port (in this example COM14):
 
-![serial_output](\img\IoT_Sensor_Module\serial_output.PNG)
+![serial_output](.\img\IoT_Sensor_Module\serial_output.PNG)
 
 
 

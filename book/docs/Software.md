@@ -1,6 +1,6 @@
 # Data Logger - Software
 
-![IoT_System](\img\IoT_System\IoT_System.PNG)
+![IoT_System](.\img\IoT_System\IoT_System.PNG)
 
 The data logger software is very straightforward.
 
@@ -123,7 +123,7 @@ sample: 9  -  2021-08-26T15:03:56.556891  -  ['OK', '21', '27.6', '47', '1041', 
 
 Pinboard
 
-![Pinboard](\img\Software\Pinboard.PNG)
+![Pinboard](.\img\Software\Pinboard.PNG)
 
 **Note.**
 

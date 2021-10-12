@@ -163,7 +163,7 @@ ax3.grid()
 fig.tight_layout()
 ```
 
-![Data_send](\img\Retrieve\Data_send.PNG)
+![Data_send](.\img\Retrieve\Data_send.PNG)
 
 ```Python
 import time
@@ -211,7 +211,7 @@ sample: 9  -  2021-08-27T08:35:56.144285  -  ['OK', '9', '150.0', '100', '2500',
 
 Data on the pinboard:
 
-![Pinboard](\img\Retrieve\Pinboard.PNG)
+![Pinboard](.\img\Retrieve\Pinboard.PNG)
 
 Below the Python script to retrieve data from the Cloud.
 
@@ -231,7 +231,7 @@ cloud_data_df.head(10)
 
 Dataframe (data from the Cloud): 
 
-![df_Cloud_data](\img\Retrieve\df_Cloud_data.PNG)
+![df_Cloud_data](.\img\Retrieve\df_Cloud_data.PNG)
 
 Comparison, data send and data retrieved.
 
@@ -257,7 +257,7 @@ ax3.legend()
 fig.tight_layout()
 ```
 
-![Data_send_retrieve](\img\Retrieve\Data_send_retrieve.PNG)
+![Data_send_retrieve](.\img\Retrieve\Data_send_retrieve.PNG)
 
 ---
 

@@ -4,7 +4,7 @@ AllThingsTalk Platform comes with an integrated rules engine. A rules engine let
 
 ## Use case
 
-![CO2 chart](\img\CO2 chart.png)
+![CO2 chart](.\img\CO2 chart.png)
 
 [Reference](https://www.buildera.com/carbon-dioxide-co2-monitoring-service)
 
@@ -14,7 +14,7 @@ AllThingsTalk Platform comes with an integrated rules engine. A rules engine let
 
 The following rules are set:
 
-![rules](\img\Rules\rules.PNG)
+![rules](.\img\Rules\rules.PNG)
 
 References: 
 
@@ -28,15 +28,15 @@ References:
 
 First, create a virtual asset.
 
-![AllThingsTalk_New_asset](\img\Rules\AllThingsTalk_New_asset.PNG)
+![AllThingsTalk_New_asset](.\img\Rules\AllThingsTalk_New_asset.PNG)
 
 
 
-![AllThingsTalk_Create_Asset](\img\Rules\AllThingsTalk_Create_Asset.PNG)
+![AllThingsTalk_Create_Asset](.\img\Rules\AllThingsTalk_Create_Asset.PNG)
 
 
 
-![AllThingsTalk_Assets](\img\Rules\AllThingsTalk_Assets.PNG)
+![AllThingsTalk_Assets](.\img\Rules\AllThingsTalk_Assets.PNG)
 
 <br>
 
@@ -44,29 +44,29 @@ First, create a virtual asset.
 
 Click on Rules &rightarrow;  New Rule
 
-![AllThingsTalk_Rules](\img\Rules\AllThingsTalk_Rules.PNG)
+![AllThingsTalk_Rules](.\img\Rules\AllThingsTalk_Rules.PNG)
 
 Rule definition:
 
-![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_1.PNG)
+![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_1.PNG)
 
 ![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_2.PNG)
 
 ![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_3.PNG)
 
-![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_3.PNG)
+![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_3.PNG)
 
 ![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_4.PNG)
 
 On the Pinboard define a label: click on New Pin &rightarrow;  Label
 
-![AllThingsTalk_New_Pin](\img\Rules\AllThingsTalk_New_Pin.PNG)
+![AllThingsTalk_New_Pin](.\img\Rules\AllThingsTalk_New_Pin.PNG)
 
 Choose an asset = CO2_indicator
 
-![AllThingsTalk_New_Pin_Asset](\img\Rules\AllThingsTalk_New_Pin_Asset.PNG)
+![AllThingsTalk_New_Pin_Asset](.\img\Rules\AllThingsTalk_New_Pin_Asset.PNG)
 
-![AllThingsTalk_Pinboard](\img\Rules\AllThingsTalk_Pinboard.PNG)
+![AllThingsTalk_Pinboard](.\img\Rules\AllThingsTalk_Pinboard.PNG)
 
 ## Test
 
@@ -261,7 +261,7 @@ Data from Cloud.
  [{'at': '2021-08-27T09:14:56.907Z', 'data': 400}]]
 ```
 
-![AllThingsTalk_Pinboard_Test](\img\Rules\AllThingsTalk_Pinboard_Test.PNG)
+![AllThingsTalk_Pinboard_Test](.\img\Rules\AllThingsTalk_Pinboard_Test.PNG)
 
 ---
 
