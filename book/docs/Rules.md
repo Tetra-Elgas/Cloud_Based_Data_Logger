@@ -50,9 +50,9 @@ Rule definition:
 
 ![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_1.PNG)
 
-![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_2.PNG)
+![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_2.PNG)
 
-![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_3.PNG)
+![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_3.PNG)
 
 ![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_3.PNG)
 

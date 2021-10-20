@@ -1,7 +1,5 @@
 # Data Logger - Software
 
-![IoT_System](.\img\IoT_System\IoT_System.PNG)
-
 The data logger software is very straightforward.
 
 ```Python
