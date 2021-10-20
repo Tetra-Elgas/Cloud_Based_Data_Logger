@@ -56,7 +56,7 @@ Rule definition:
 
 ![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_3.PNG)
 
-![AllThingsTalk_Rules_Def](\img\Rules\AllThingsTalk_Rules_4.PNG)
+![AllThingsTalk_Rules_Def](.\img\Rules\AllThingsTalk_Rules_4.PNG)
 
 On the Pinboard define a label: click on New Pin &rightarrow;  Label
 
