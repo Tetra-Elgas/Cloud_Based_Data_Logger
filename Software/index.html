@@ -1,0 +1,618 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>Data Logger Software - Cloud-Based Data Logger Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-logger-software" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cloud-Based Data Logger Tutorial" class="md-header__button md-logo" aria-label="Cloud-Based Data Logger Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud-Based Data Logger Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Logger Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Sensor_Module/" class="md-tabs__link">
+      Sensor Module
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Cloud_platform/" class="md-tabs__link">
+      Cloud platform
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Data Logger Software
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Retrieve_data/" class="md-tabs__link">
+      Retrieve data
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Rules/" class="md-tabs__link">
+      Rules
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../license/" class="md-tabs__link">
+      License
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cloud-Based Data Logger Tutorial" class="md-nav__button md-logo" aria-label="Cloud-Based Data Logger Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Cloud-Based Data Logger Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sensor_Module/" class="md-nav__link">
+        Sensor Module
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloud_platform/" class="md-nav__link">
+        Cloud platform
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Data Logger Software
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Retrieve_data/" class="md-nav__link">
+        Retrieve data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rules/" class="md-nav__link">
+        Rules
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="data-logger-software">Data Logger - Software</h1>
+<p>The data logger software is very straightforward.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">read_serial</span><span class="p">(</span><span class="n">com_port</span><span class="p">,</span> <span class="n">baud_rate</span><span class="p">):</span>
+    <span class="n">ser</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="n">com_port</span><span class="p">,</span> <span class="n">baud_rate</span><span class="p">,</span> <span class="n">bytesize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">parity</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">,</span>\
+                        <span class="n">stopbits</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">ser</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+    <span class="n">ser</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;s&quot;</span><span class="p">))</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># wait two seconds, the default configuration is used where SCD30 has data ready every two seconds.</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">ser</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
+    <span class="n">ser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+
+<span class="k">def</span> <span class="nf">send_data</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">timestamp</span><span class="p">,</span> <span class="n">sensor_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sample the sensor data and send it to the Cloud. </span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    device: type dict</span>
+<span class="sd">        device description (defined in a json file)</span>
+<span class="sd">    timestamp: type str</span>
+<span class="sd">        UTC time</span>
+<span class="sd">    sensor_data: type list</span>
+<span class="sd">        [&#39;OK&#39;, counter, Temperature_degC, Humidity_perc, CO2_ppm, &#39;X\r\n&#39;]</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    message: str</span>
+<span class="sd">        ConnectionOK: data is send successful</span>
+<span class="sd">        ConnectionError: a Connection error occurred. (https://docs.python-requests.org/en/master/_modules/requests/exceptions/)</span>
+<span class="sd">        HTTPError: an HTTP error occurred (https://docs.python-requests.org/en/master/_modules/requests/exceptions/)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://&quot;</span><span class="o">+</span><span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;authentication&quot;</span><span class="p">][</span><span class="s2">&quot;api&quot;</span><span class="p">]</span>\
+            <span class="o">+</span><span class="s2">&quot;/device/&quot;</span><span class="o">+</span><span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;authentication&quot;</span><span class="p">][</span><span class="s2">&quot;Device_ID&quot;</span><span class="p">]</span>\
+            <span class="o">+</span><span class="s2">&quot;/state&quot;</span>
+
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;authentication&quot;</span><span class="p">][</span><span class="s2">&quot;Ground_Token&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+
+    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;assets&quot;</span><span class="p">][</span><span class="s2">&quot;asset#0&quot;</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">]:</span>
+            <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">sensor_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+             <span class="s2">&quot;at&quot;</span><span class="p">:</span> <span class="n">timestamp</span><span class="p">},</span>
+        <span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;assets&quot;</span><span class="p">][</span><span class="s2">&quot;asset#1&quot;</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">]:</span>
+            <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">sensor_data</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+             <span class="s2">&quot;at&quot;</span><span class="p">:</span> <span class="n">timestamp</span><span class="p">},</span>
+        <span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;assets&quot;</span><span class="p">][</span><span class="s2">&quot;asset#2&quot;</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">]:</span>
+            <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">sensor_data</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+             <span class="s2">&quot;at&quot;</span><span class="p">:</span> <span class="n">timestamp</span><span class="p">},</span>
+        <span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;assets&quot;</span><span class="p">][</span><span class="s2">&quot;asset#3&quot;</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">]:</span>
+            <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">sensor_data</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span>
+             <span class="s2">&quot;at&quot;</span><span class="p">:</span> <span class="n">timestamp</span><span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;PUT&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span>\
+                                    <span class="n">timeout</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;authentication&quot;</span><span class="p">][</span><span class="s2">&quot;timeout&quot;</span><span class="p">]))</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;ok&#39;</span>
+        <span class="k">return</span> <span class="n">message</span>
+    <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">ConnectionError</span> <span class="k">as</span> <span class="n">exception</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;ConnectionError&#39;</span>
+        <span class="k">return</span> <span class="n">message</span>
+    <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">HTTPError</span> <span class="k">as</span> <span class="n">exception</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;HTTPError&#39;</span>
+        <span class="k">return</span> <span class="n">message</span>
+</code></pre></div>
+
+<p>Below is an example code where we send ten samples to the Cloud. The time between the samples equals 20 seconds.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">serial</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;device.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+    <span class="n">device</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+
+<span class="c1"># Time between two samples</span>
+<span class="n">SAMPLING_TIME</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="c1"># Read 10 samples and send the output to the Cloud</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">start_sample</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
+
+    <span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
+    <span class="n">sensor_data</span> <span class="o">=</span> <span class="n">read_serial</span><span class="p">(</span><span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;serial&quot;</span><span class="p">][</span><span class="s2">&quot;com_port&quot;</span><span class="p">],</span>\
+                              <span class="n">device</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">][</span><span class="s2">&quot;serial&quot;</span><span class="p">][</span><span class="s2">&quot;baud_rate&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">send_data</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">timestamp</span><span class="p">,</span> <span class="n">sensor_data</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sample:&#39;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39; - &#39;</span><span class="p">,</span> <span class="n">timestamp</span><span class="p">,</span><span class="s1">&#39; - &#39;</span><span class="p">,</span> <span class="n">sensor_data</span><span class="p">,</span> <span class="s1">&#39; - &#39;</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+
+    <span class="n">finish_sample</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">SAMPLING_TIME</span><span class="p">)</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">finish_sample</span> <span class="o">-</span> <span class="n">start_sample</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
+</code></pre></div>
+
+<p>Terminal output:</p>
+<div class="highlight"><pre><span></span><code>sample: 0  -  2021-08-26T15:00:54.008322  -  [&#39;OK&#39;, &#39;12&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1022&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 1  -  2021-08-26T15:01:14.346990  -  [&#39;OK&#39;, &#39;13&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1012&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 2  -  2021-08-26T15:01:34.609076  -  [&#39;OK&#39;, &#39;14&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1028&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 3  -  2021-08-26T15:01:54.859678  -  [&#39;OK&#39;, &#39;15&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1032&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 4  -  2021-08-26T15:02:15.140923  -  [&#39;OK&#39;, &#39;16&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1032&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 5  -  2021-08-26T15:02:35.407105  -  [&#39;OK&#39;, &#39;17&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1033&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 6  -  2021-08-26T15:02:55.652324  -  [&#39;OK&#39;, &#39;18&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1034&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 7  -  2021-08-26T15:03:15.899682  -  [&#39;OK&#39;, &#39;19&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1039&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 8  -  2021-08-26T15:03:36.152096  -  [&#39;OK&#39;, &#39;20&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1036&#39;, &#39;X\r\n&#39;]  -  ok
+sample: 9  -  2021-08-26T15:03:56.556891  -  [&#39;OK&#39;, &#39;21&#39;, &#39;27.6&#39;, &#39;47&#39;, &#39;1041&#39;, &#39;X\r\n&#39;]  -  ok
+</code></pre></div>
+
+<p>Pinboard</p>
+<p><img alt="Pinboard" src="../img/Software/Pinboard.PNG" /></p>
+<p><strong>Note.</strong></p>
+<p>The <em>com_port</em> and <em>baud_rate</em> are defined in <em>device.json</em></p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;serial&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;com_port&quot;</span><span class="p">:</span> <span class="s2">&quot;com14&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;baud_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;115200&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<hr />
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Cloud_platform/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cloud platform" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Cloud platform
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Retrieve_data/" class="md-footer__link md-footer__link--next" aria-label="Next: Retrieve data" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Retrieve data
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+    
+  </body>
+</html>
