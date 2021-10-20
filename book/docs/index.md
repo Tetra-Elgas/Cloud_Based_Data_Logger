@@ -1,4 +1,4 @@
-# Cloud-Based Data Logger Tutorial
+# Tutorial Cloud-Based Data Logger
 
 [Carbon dioxide (CO<sub>2</sub>)](https://en.wikipedia.org/wiki/Carbon_dioxide) is one of the indicators of [indoor air quality](https://en.wikipedia.org/wiki/Indoor_air_quality#Carbon_dioxide). Let us take this as an example use case for our **Cloud-Based Data Logger Tutorial**.
 
